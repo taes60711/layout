@@ -18,6 +18,7 @@ class Sample1 extends StatelessWidget {
               height: 100,
               color: Colors.black,
             ),
+
             const Text('Welcome back your been missed!'),
             const SizedBox(height: 20),
             Container(
