@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:layout/sample1.dart';
 import 'package:layout/sample2.dart';
+import 'package:layout/sample3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,8 +15,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  List<Widget> get sampleWidget => [const Sample1(), const Sample2()];
-  int index = 0, inputedIndex = 0;
+  List<Widget> get sampleWidget => [const Sample1(), const Sample2(),const Sample3()];
+  int index = 2, inputedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +25,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          
+          resizeToAvoidBottomInset:false,
           body: Stack(
             children: [
               sampleWidget[index],
